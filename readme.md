@@ -1,9 +1,9 @@
-**Container Registry
+**Container Registry**
 ```
 https://docs.docker.com/engine/install/ubuntu/
 ```
 
-**Dockerfile
+**Dockerfile**
 ```
 FROM mcr.microsoft.com/dotnet/aspnet:6.0
 WORKDIR /app
@@ -12,12 +12,12 @@ EXPOSE 80
 ENTRYPOINT ["dotnet", "container-test.dll"]
 ```
 
-**see all the container images in your system
+**see all the container images in your system**
 ```
 sudo docker images
 ```
 
-**build the container image from the Dockerfile
+**build the container image from the Dockerfile**
 ```
 sudo docker build -t nameOFtheImageWhateverUwant .
 ```
@@ -33,7 +33,7 @@ sudo docker run --name appnginx -p 80:80 -d nginx
 nginx             => name of the image we want to download, install and run on our machine
 
 
-**see the docker container-images running currently
+**see the docker container-images running currently**
 ```
 sudo docker ps
 ```
