@@ -47,8 +47,11 @@ sudo docker stop nameOfimage**OR**First3charactersOFtheReference
 
 
 **Azure Container Registry (priavately host our container image on AZURE-container-Registry)**
-setup AZURE CLI in linux system: ``` https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt ```
-azure cli login: ```https://learn.microsoft.com/en-us/cli/azure/acr?view=azure-cli-latest#az-acr-login ```
+
+setup AZURE CLI in linux system:
+``` https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt ```
+azure cli login:
+```https://learn.microsoft.com/en-us/cli/azure/acr?view=azure-cli-latest#az-acr-login ```
 
 ```
 sudo az acr login --name nameOfContainerRegistryCreatedonAzure --username nameFromAccessKeys --password passwordFromAccessKeysOnAzure
