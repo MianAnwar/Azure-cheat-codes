@@ -5,8 +5,9 @@
 
 
 **FOR LINUX VM**
-| Configure DNS name |
-| have PuTTy, WinSCP softwares in case of Linux VM |
+
+Configure DNS name
+have PuTTy, WinSCP softwares in case of Linux VM
 
 Just encountered on Ubuntu 22.04.
 ```
