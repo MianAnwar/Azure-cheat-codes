@@ -24,6 +24,7 @@ sudo docker build -t nameOFtheImageWhateverUwant .
 you need to be in the same directory where the Dockerfile is.
 
 
+**To run the docker container image**
 ```
 sudo docker run --name appnginx -p 80:80 -d nginx
 ```
@@ -38,6 +39,8 @@ nginx             => name of the image we want to download, install and run on o
 sudo docker ps
 ```
 
-
+**Important Workflow Commands**
 ```
+sudo docker image rm nameOfimage**OR**First3charactersOFtheReference
+sudo docker stop nameOfimage**OR**First3charactersOFtheReference
 ```
