@@ -9,12 +9,12 @@ https://docs.microsoft.com/en-us/powershell/module/az.resources/set-azresource?v
 
 **Ensure to use your own GitHub repository URL**
 
-# signing into your azure account
+# Step#1 signing into your azure account
 ```
 Connect-AzAccount
 ```
 
-# creating variables
+# Step#2 creating variables
 ```
 $ResourceGroupName="powershell-grp"
 $WebAppName="companyapp10000"
@@ -26,7 +26,7 @@ $Properties =@{
 }
 ```
 
-# setting azure resource and deploy web app from github
+# Step#3 setting azure resource and deploy web app from github
 ```
 Set-AzResource -ResourceGroupName $ResourceGroupName `
                -Properties $Properties `
