@@ -7,7 +7,7 @@ https://docs.microsoft.com/en-us/powershell/module/az.websites/new-azappservicep
 **2. New-AzWebApp**
 https://docs.microsoft.com/en-us/powershell/module/az.websites/new-azwebapp?view=azps-7.3.0
 
-# creating variables
+# Step#1 creating variables
 ```
 $ResourceGroupName="powershell-grp"
 $Location="North Europe"
@@ -15,18 +15,18 @@ $AppServicePlanName="companyplan"
 $WebAppName="companyapp10000"
 ```
 
-# signing into the Azure portal
+# Step#2 signing into the Azure portal
 ```
 Connect-AzAccount
 ```
 
-# creating new azure resource group for logical separation of the services
+# Step#3 creating new azure resource group for logical separation of the services
 ```
 New-AzResouceGroup -Name $ResourceGroupName `
                    -Location $Location
 ```
 
-# We first need to create an App Service Plan
+# Step#4 We first need to create an App Service Plan
 ```
 New-AzAppServicePlan -ResourceGroupName $ResourceGroupName `
                      -Name $AppServicePlanName `
@@ -35,7 +35,7 @@ New-AzAppServicePlan -ResourceGroupName $ResourceGroupName `
                      -NumberofWorkers 1
 ```
 
-# Then we can create the Azure Web App
+# Step#5 Then we can create the Azure Web App
 ```
 New-AzWebApp -ResourceGroupName $ResourceGroupName `
              -Name $WebAppName `
