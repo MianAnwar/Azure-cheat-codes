@@ -5,8 +5,8 @@
 https://docs.microsoft.com/en-us/powershell/module/az.resources/set-azresource?view=azps-7.3.0
 
 
-# We are deploying an application from GitHub onto an existing Web App
-# Ensure to use your own GitHub repository URL
+**We are deploying an application from GitHub onto an existing Web App**
+**Ensure to use your own GitHub repository URL**
 
 # signing into your azure account
 ```
