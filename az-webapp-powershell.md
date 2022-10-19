@@ -35,7 +35,7 @@ New-AzAppServicePlan -ResourceGroupName $ResourceGroupName `
                      -NumberofWorkers 1
 ```
 
-# Step#5 Then we can create the Azure Web App
+# Step#5 Then we can create the Azure Web App in AZURE-WebApp-Services
 ```
 New-AzWebApp -ResourceGroupName $ResourceGroupName `
              -Name $WebAppName `
