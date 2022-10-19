@@ -23,7 +23,7 @@ Connect-AzAccount
 # creating new azure resource group for logical separation of the services
 ```
 New-AzResouceGroup -Name $ResourceGroupName `
-                   -Location $Location `
+                   -Location $Location
 ```
 
 # We first need to create an App Service Plan
@@ -32,12 +32,12 @@ New-AzAppServicePlan -ResourceGroupName $ResourceGroupName `
                      -Name $AppServicePlanName `
                      -Location $Location `
                      -Tier "B1" `
-                     -NumberofWorkers 1 `
+                     -NumberofWorkers 1
 ```
 
 # Then we can create the Azure Web App
 ```
 New-AzWebApp -ResourceGroupName $ResourceGroupName `
              -Name $WebAppName `
-             -Location $Location -AppServicePlan $AppServicePlanName `
+             -Location $Location -AppServicePlan $AppServicePlanName
 ```
