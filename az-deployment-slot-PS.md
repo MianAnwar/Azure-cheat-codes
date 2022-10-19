@@ -54,7 +54,7 @@ $Properties =@{
 Set-AzResource -ResourceGroupName $ResourceGroupName `
                -Properties $Properties `
                -ResourceType Microsoft.Web/sites/slots/sourcecontrols `
-               -ResourceName $WebAppName/$SlotName/web
+               -ResourceName $WebAppName/$SlotName/web `
                -ApiVersion 2015-08-01
                -Force
 ```
@@ -65,6 +65,8 @@ Set-AzResource -ResourceGroupName $ResourceGroupName `
 ```
 $TargetSlot="production"
 
-Switch-AzWebAppSlot -Name $WebAppName -ResourceGroupName $ResourceGroupName `
--SourceSlotName $SlotName -DestinationSlotName $TargetSlot
+Switch-AzWebAppSlot -Name $WebAppName `
+                    -ResourceGroupName $ResourceGroupName `
+                    -SourceSlotName $SlotName `
+                    -DestinationSlotName $TargetSlot
 ```
