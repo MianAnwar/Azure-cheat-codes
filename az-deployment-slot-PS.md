@@ -46,7 +46,7 @@ New-AzWebAppSlot -Name $WebAppName `
 
 ```
 $Properties =@{
-    repoUrl="";
+    repoUrl="https://github.com/MianAnwar/Az-Solutions";
     branch="master";
     isManualIntegration="true";
 }
