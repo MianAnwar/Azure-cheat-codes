@@ -40,7 +40,7 @@ New-AzWebAppSlot -Name $WebAppName `
                  -Slot $SlotName
 ```
 
-**We then deploy an application onto the Staging slot**
+# We then deploy an application onto the Staging slot
 
 **Ensure to use your own GitHub URL**
 
